@@ -1,0 +1,314 @@
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoCondensedRegular";
+    src: url("RobotoCondensedRegular/RobotoCondensedRegular.eot");
+    src: url("fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/RobotoCondensedRegular/RobotoCondensedRegular.woff") format("woff"),
+    url("fonts/RobotoCondensedRegular/RobotoCondensedRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoCondensedLight"; */
+@font-face {
+    font-family: "RobotoCondensedLight";
+    src: url("fonts/RobotoCondensedLight/RobotoCondensedLight.eot");
+    src: url("fonts/RobotoCondensedLight/RobotoCondensedLight.eot?#iefix")format("embedded-opentype"),
+    url("fonts/RobotoCondensedLight/RobotoCondensedLight.woff") format("woff"),
+    url("fonts/RobotoCondensedLight/RobotoCondensedLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+/*My CSS Main*/
+body{
+	font-family: "RobotoRegular", Arial, sans-serif;
+	background-color: black;
+    background-image: url(half_moon.png);
+    background-repeat: no-repeat;
+	color: #5b6161;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+header{
+	height: 250px;
+	top: -10px;
+	
+	background-repeat: no-repeat;
+	background-position: left;
+
+}
+
+h1, h2, h3, h6 {
+    letter-spacing: 0.0625em;
+	color: #b23c1c;
+}
+
+
+h6 a {
+	color: #b23c1c;
+    letter-spacing: 0.0625em;
+}
+
+hr {
+    
+    border: 1px dashed #5b6161;
+    border-style: none none dashed; 
+
+    /*Rest of stuff here*/
+}
+
+/* Menu */
+nav{
+	background-color: transparent;
+	margin: 0;
+	overflow: hidden;
+    font-weight: bold;
+
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav ul li a{
+	color: white;
+	display: block;
+	line-height: 3em;
+	padding: 5em 1em 1em 1em;
+	text-decoration: none;
+}
+
+nav ul li h1{
+    font-size: 3em;
+}
+
+nav ul:first-child {
+	margin-right: auto;
+    margin-top: 50px;
+}
+
+nav ul li a:hover{
+	background-color: #c41800;
+        -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+} 
+
+/* End of Menu */
+
+
+/*Content*/
+main{
+	
+    width: 70%;
+    margin: auto;
+    
+}
+
+section{
+	
+	width: 100%;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+article, aside{
+    padding: 5px;
+
+}
+
+article{
+    width: 70%;    
+    float: left; 
+    overflow: hidden;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    overflow: hidden;
+}
+
+article h6{
+    color: #5b6161;
+}
+
+article a{
+    color: #b23c1c;
+    text-decoration: none;
+}
+
+article a:hover{
+    color: white;
+}
+
+
+aside{
+    width: 30%;
+    
+    padding: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    overflow: hidden;
+
+    
+}
+
+aside a{
+    color: #5b6161;
+    text-decoration: none;
+}
+
+aside a:hover{
+    color: white;
+}
+
+aside li{
+    list-style-type: none;
+}
+
+article ul{
+        line-height: 0.1em;
+}
+/*Posicionar data e nome do autor*/
+#art1 ul#autor, #art2 ul#autor, #art3 ul#autor{ 
+    margin: 0;
+    padding: 0;
+
+    }
+
+#art1 ul#autor li, #art2 ul#autor li, #art3 ul#autor li{
+    display: inline-block;    
+}
+
+#art1 ul#autor li:last-child, #art2 ul#autor li:last-child, #art3 ul#autor li:last-child{
+    float: right;
+}
+
+/*Posicionar mais e comentarios*/
+#art1 ul#mais, #art2 ul#mais, #art3 ul#mais{ 
+    margin: 0;
+    padding: 0;
+    }
+
+#art1 ul#mais li, #art2 ul#mais li, #art3 ul#mais li{
+    display: inline-block;
+    margin-left: 3em;
+      
+}
+
+
+#art1 ul#mais li a, #art2 ul#mais li a, #art3 ul#mais li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/*End of content*/
+
+/*Footer*/
+footer{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    clear: both;
+    background-color: #1a1715;
+    height: 250px;
+
+}
+
+#footer-contents{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.linksfinais {
+  display: block;
+  float: left;
+  text-align: center;
+  vertical-align:middle;
+  line-height: 1.3em;
+  text-align: justify;
+  width: 33.3%;
+  padding: 30px 60px 30px 0;
+  margin: auto;
+}
+
+.linksfinais ul{
+   
+}
+
+.linksfinais li{
+    text-align: left;
+}
+
+footer h2{
+    color: white;
+}
+
+footer a{
+    color: #b23c1c;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: white;
+}
+
+#rodape2{
+    line-height: 7em;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+#rodape2 a{
+    text-decoration: none;
+    color: #5b6161;
+}
+
+#rodape2 a:hover{
+    color: white;
+}
+
+
